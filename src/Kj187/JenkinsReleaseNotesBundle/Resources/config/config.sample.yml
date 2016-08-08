@@ -1,0 +1,10 @@
+parameters:
+  jenkins_release_notes:
+    jenkins:
+      url: "https://xxx:xxx@jenkins.xxx.com/"
+      token: "xxx"
+      defaultJob: "build"
+
+twig:
+    form_themes:
+        - "bootstrap_3_layout.html.twig"

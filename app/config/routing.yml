@@ -1,3 +1,8 @@
+kj187_jenkins_release_notes:
+    resource: "@Kj187JenkinsReleaseNotesBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

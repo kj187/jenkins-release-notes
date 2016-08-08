@@ -1,0 +1,7 @@
+services:
+#    kj187_jenkins_release_notes.example:
+#        class: Kj187\JenkinsReleaseNotesBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+
+    kj187_jenkins_release_notes.object_transformer:
+        class: Kj187\JenkinsReleaseNotesBundle\Service\ObjectTransformer

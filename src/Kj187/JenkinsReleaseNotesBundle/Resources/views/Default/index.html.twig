@@ -1,0 +1,17 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+{{ form_end(form) }}
+
+{% for flash_message in app.session.flashBag.get('notice') %}
+    <div class="flash-notice">
+        {{ flash_message }}
+    </div>
+{% endfor %}
+
+{% if commits %}
+    <ul>
+    {% for commit in commits %}
+        <li>{{ commit.message }} (<a href="{{ commit.url }}" target="_blank">Github</a>)</li>
+    {% endfor %}
+    </ul>
+{% endif %}
